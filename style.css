@@ -32,6 +32,37 @@ box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3) ;
 position: fixed;
 z-index: 100;
 }
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  color: #ff9800;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    background-color: #0a0a0a;
+    padding: 10px 0;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 15px 0;
+  }
+}
+
+
 .logo{
     font-size: 26px;
     margin:20px;
