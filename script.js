@@ -3,7 +3,7 @@
 
   toggle.addEventListener('click', () => {
     navLinks.classList.toggle('show');
-  });
+  }); 
 
 let mode = document.getElementById("mode-toggle");
 
