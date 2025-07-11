@@ -716,5 +716,10 @@ body.light-mode .contact-form textarea {
   background-color: #d58512;
 }
 
-
+@media (max-width: 480px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
 
