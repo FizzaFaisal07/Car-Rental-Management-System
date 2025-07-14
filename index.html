@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CarXRent | Car Rental </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body class="light-mode">
+    
+      <!-- LOGIN / SIGNUP MODAL -->
+<div id="authModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeLoginModal()">&times;</span>
+
+    <div class="tabs">
+      <button onclick="showAuthForm('login')" id="loginTab" class="active-tab">Login</button>
+      <button onclick="showAuthForm('signup')" id="signupTab">Sign Up</button>
+    </div>
+
+    <!-- Login Form -->
+    <form id="loginForm" class="auth-form">
+      <input type="email" id="loginEmail" placeholder="Email" required />
+      <input type="password" id="loginPassword" placeholder="Password" required />
+      <button type="submit">Login</button>
+    </form>
+
+    <!-- Signup Form -->
+    <form id="signupForm" class="auth-form" style="display: none;">
+      <input type="text" placeholder="Full Name" required />
+      <input type="email" placeholder="Email" required />
+      <input type="password" placeholder="Password" required />
+      <input type="password" placeholder="Confirm Password" required />
+      <button type="submit">Sign Up</button>
+    </form>
+  </div>
+</div>
+
+
+
+    <!--Header-->
+    <header>
+        <div class="container">
+            <nav>
+              <div class="menu-toggle">&#9776;</div>
+                <div class="logo">
+                    <i class="fas fa-car-side"></i>
+                    Car<span>XRent</span>
+                </div>
+                <ul class="nav-links">
+                    <li ><a href="#home">Home</a></li>
+                    <li><a href="#cars">Available Cars</a></li>
+                    <li><a href="#booking">Booking</a></li>
+                    <li><a href="#contact">Contact us</a></li>
+                </ul>
+                <div class="right">
+                    <button class="login-btn"  onclick="openLoginModal()">Login</button>
+                    <button id="mode-toggle" class="mode-btn">☀️Mode</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+  
+
+     <!--Home Page-->
+
+     <section class="hero" id="home">
+        <div class="container">
+    <div class="hero-content">
+        <div class="hero-text">
+            <h1>Welcome to <span>CarXrent!</span></h1>
+            <h2>Find Your Ride Today!</h2>
+            <p>Your trusted destination for renting affordable, premium cars anywhere, anytime.<br>
+                Rent Affordable Cars in Seconds.
+            </p>
+                <div class="hero-buttons">
+                    <a href="#cars" class="btn">Explore Cars</a>
+                   <a href="#booking" class="btn btn-outline">Book Now</a>
+                </div>
+        </div>
+        <div class="hero-image">
+            <img src="https://images.pexels.com/photos/1545743/pexels-photo-1545743.jpeg?cs=srgb&dl=pexels-mayday-1545743.jpg&fm=jpg">
+        </div>
+    </div>
+</div>
+     </section>
+
+
+     <!--Cars-->
+
+     <section class="available-cars" id="cars"><div class="container">
+              <div class="section-title">
+                <h2>Available Cars</h2>
+            </div>
+
+  <div class="car-grid">
+    <!-- Car 1 -->
+    <div class="car-card">
+      <img src="https://spn-sta.spinny.com/blog/20220228143146/559212.jpeg" alt="Sedan Car">
+      <h3>Sedan 2024</h3>
+      <p>Automatic | Petrol</p>
+      <p class="price">Rs. 5,000/day</p>
+      <a href="#booking" class="btn">Book Now</a>
+    </div>
+
+    <!-- Car 2 -->
+    <div class="car-card">
+      <img src="https://cdn.carprices.ae/assets/best_suvs_to_buy_under_aed_100_000_in_uae_in_2023_5_c1d1f2c369.jpeg" alt="SUV Car">
+      <h3>Luxury SUV</h3>
+      <p>Manual | Diesel</p>
+      <p class="price">Rs. 7,500/day</p>
+      <a href="#booking" class="btn">Book Now</a>
+    </div>
+
+
+    <div class="car-card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3mMqcRYCJDeEBVysy-BNQ07cXezqh7bf-LQ&s" alt="Honda Civic">
+      <h3>Honda Civic</h3>
+      <p>Automatic | Petrol</p>
+      <p class="price">Rs. 12,500/day</p>
+      <a href="#booking" class="btn">Book Now</a>
+    </div>
+
+
+    <div class="car-card">
+      <img src="https://imgd-ct.aeplcdn.com/1280x720/n/cw/ec/44709/fortuner-exterior-left-front-three-quarter.jpeg?q=80" alt="Fortuner">
+      <h3>Fortuner</h3>
+      <p>Automatic | Fuel</p>
+      <p class="price">Rs. 15,500/day</p>
+      <a href="#booking" class="btn">Book Now</a>
+    </div>
+
+    <div class="car-card">
+      <img src="https://www.mercedes-benzsouthwest.co.uk/media/.renditions/wysiwyg/Grey_1.jpg" alt="Mercedes">
+      <h3>Mercedes</h3>
+      <p>Automatic | Petrol</p>
+      <p class="price">Rs. 20,500/day</p>
+      <a href="#booking" class="btn">Book Now</a>
+    </div>
+
+    <div class="car-card">
+      <img src="https://i0.wp.com/www.kumrattourism.com/wp-content/uploads/2022/06/toyota-corolla-1.jpg?fit=1024%2C600&ssl=1" alt="Corolla">
+      <h3>Toyota Corolla</h3>
+      <p>Manual | Petrol</p>
+      <p class="price">Rs. 8,500/day</p>
+      <a href="#booking" class="btn">Book Now</a>
+    </div>
+
+
+    <div class="car-card">
+      <img src="https://blogpakistan.pk/wp-content/uploads/2021/05/ex.jpg" alt="city">
+      <h3>Honda City</h3>
+      <p>Manual | Fuel</p>
+      <p class="price">Rs. 7,500/day</p>
+      <a href="#booking" class="btn">Book Now</a>
+    </div>
+
+    <div class="car-card">
+      <img src="https://hips.hearstapps.com/hmg-prod/images/14-2018-bmw-m5-104-1530630274.jpg?crop=1xw:1xh;center,top&resize=980:*" alt="bmw">
+      <h3>BMW</h3>
+      <p>Automatic | Fuel</p>
+      <p class="price">Rs. 21,500/day</p>
+      <a href="#booking" class="btn">Book Now</a>
+    </div>
+
+     <div class="car-card">
+      <img src="https://images.unsplash.com/photo-1540066019607-e5f69323a8dc?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YXVkaXxlbnwwfHwwfHx8MA%3D%3D" alt="Audi">
+      <h3>Audi</h3>
+      <p>Automatic | Petrol</p>
+      <p class="price">Rs. 22,500/day</p>
+      <a href="#booking" class="btn">Book Now</a>
+    </div>
+
+    <div class="car-card">
+      <img src="https://cache1.pakwheels.com/system/car_version_specification_pictures/426/original/Toyota_Hilux_Revo_GR-S_2023_.png?1679076556" alt="Revo">
+      <h3>Toyota Revo</h3>
+      <p>Automatic | Diesel</p>
+      <p class="price">Rs. 19,500/day</p>
+      <a href="#booking" class="btn">Book Now</a>
+    </div>
+
+     <div class="car-card">
+      <img src="https://toyotacreek.com/wp-content/uploads/2022/10/Toyota-Yaris-Interior-Specs-Features-Featured.jpg" alt="Yaris">
+      <h3>Toyota Yaris</h3>
+      <p>Manual | Diesel</p>
+      <p class="price">Rs. 10,500/day</p>
+      <a href="#booking" class="btn">Book Now</a>
+    </div>
+
+     <div class="car-card">
+      <img src="https://static.pakwheels.com/2022/05/Changan-CS35-Plus.jpg" alt="Changan">
+      <h3>Changan</h3>
+      <p>Manual | Fuel</p>
+      <p class="price">Rs. 9,500/day</p>
+      <a href="#booking" class="btn">Book Now</a>
+    </div>
+
+  </div></div>
+</section>
+
+<!--booking-->
+
+<section class="booking-section" id="booking">
+    <div class="container">
+
+  <div class="section-title">
+    <h2>Car Booking</h2>
+  </div>
+
+  <div class="car-booking">
+   <form id="carBookingForm">
+  <label for="fullName">Full Name</label>
+  <input type="text" id="fullName" placeholder="Enter your full name" required />
+
+  <label for="bookingEmail">Email Address</label>
+  <input type="email" id="bookingEmail" placeholder="Enter your email" required />
+
+  <label for="carModel">Car Model</label>
+  <input type="text" id="carModel" placeholder="e.g. Toyota Yaris" required />
+
+  <label for="pickupDate">Pickup Date</label>
+  <input type="date" id="pickupDate" required />
+
+  <label for="returnDate">Return Date</label>
+  <input type="date" id="returnDate" required />
+
+  <label for="notes">Additional Notes</label>
+  <textarea id="notes" placeholder="Any instructions or notes (optional)"></textarea>
+
+  <button type="submit">Confirm Booking</button>
+  <p id="bookingConfirmation"></p>
+</form>
+
+  </div>
+</div>
+</section>
+
+
+<!-- Contact Us Section -->
+<section id="contact">
+  <div class="container">
+    <div class="section-title">
+      <h2>Contact Us</h2>
+    </div>
+
+    <div class="contact-wrapper">
+      <div class="contact-info">
+        <p><i class="fas fa-envelope"></i> Email: rentcar@example.com</p>
+        <p><i class="fas fa-phone"></i> Phone: +92-300-1234567</p>
+        <p><i class="fas fa-map-marker-alt"></i> Location: AutoXRent, Lahore, Pakistan</p>
+      </div>
+
+      <form class="contact-form">
+        <p id="contactMessage" style="margin-top: 10px;"></p>
+        <label for="name">Your Name</label>
+        <input type="text" id="name" placeholder="Enter your name" required />
+
+        <label for="email">Your Email</label>
+        <input type="email" id="email" placeholder="Enter your email" required />
+
+        <label for="message">Your Message</label>
+        <textarea id="message" placeholder="Type your message here..." required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+
+    <!--footer-->
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="https://www.google.com/"> <i class="fab fa-google" aria-hidden="true"></i></a>
+                <a href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p class="copyright">© carXRent - All rights reserved.</p>
+        </div>
+
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
